@@ -5,7 +5,7 @@ console.log("EXERCISE 1:\n==========\n");
 
 function printOdds(count){
     if(count < 0){
-        console.log("Count is negative")
+        -count
     }
     else{
         for(let i = 0; i <= count; i++){
@@ -27,7 +27,7 @@ function checkAge(userName, age){
     let aboveSixteen = `Congrats ${userName}, you can drive!`;
     let belowSixteen = `Sorry ${userName}, but you need to wait until you're 16.`;
 
-    if(age > 16){
+    if(age >= 16){
         console.log(aboveSixteen);
     }
     else{
@@ -38,10 +38,10 @@ function checkAge(userName, age){
 
 const coordinates = {
   "0,0" : "center",
-  "1,0" : "on y axis",
-  "0,1" : "on x axis",
-  "-1, 0": "on y axis",
-  "0,-1": "on x axis",
+  "1,0" : "on x axis",
+  "0,1" : "on y axis",
+  "-1,0": "on x axis",
+  "0,-1": "on y axis",
   "1,1": "Quadrant 1",
   "1,-1": "Quadrant 2",
   "-1,-1": "Quadrant 3",
@@ -52,3 +52,5 @@ function checkQuad(x,y){
   let key = `${Math.sign(x)},${Math.sign(y)}`;
   console.log(coordinates[key]);
 }
+
+
